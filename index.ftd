@@ -1,547 +1,98 @@
 -- import: fifthtry.github.io/color-doc/color-ui as cu
 -- import: fastn
 -- import: fastn/processors as pr
+-- import: fifthtry.github.io/sailing-shark-cs/colors as colors
 -- import: fifthtry.github.io/color-doc as cd
 
--- ftd.column:
-width: fill-container
-height: fill-container
-background.solid: green
 
-;; navbar 
--- navbar:
-;; end navbar
+-- string figma-json:
+$processor$: pr.figma-cs-token
+variable: $main
+name: cs
 
--- cta-1:
 
-;; hero-1
--- hero-1:
-;; end hero-1
+-- cd.color-display-one:
+colors: $main
+minimize: true
+figma-json: $figma-json
 
-;; hero-2
--- hero-2:
-;; end hero-2
 
 
-;; hero-3
--- hero-3:
-;; end hero-3
 
 
-;;steps
--- steps-sectn:
-;; steps ends
-
-
-;; collection section
--- collection:
-;; collection ends
-
-
-;; entry form
--- walletform:
-;; entry form ends
-
-
-
--- end: ftd.column
-
-
-
-
-
-
-
-
-
-
-
-
-
-
--- component navbar:
--- ftd.row:
-width.fixed.vw.px: 100
-height.fixed.px: 112
-background.solid: #FFFFFF
-
-
--- ftd.column:
-align-content: center
-width.fixed.px: 77
-height.fixed.px: 33
-background.solid: $inherited.colors.cta-primary.base
-margin-left.px: 40
-padding-vertical.px: 40
--- ftd.text: Logo
-text-align: center
--- end: ftd.column
-
--- ftd.column:
-width.fixed.px: 875
--- end: ftd.column
-
-
--- ftd.column:
-margin-right.px: 80
-align-self: center
-width.fixed.px: 368
-height.fixed.px: 30
-background.solid: yellow
--- ftd.row:
-width.fixed.px: 368
-height.fixed.px: 30
-spacing.fixed.px: 32
-
--- navlink:
--- navlink:
--- navlink:
--- navlink:
--- navlink:
-
--- end: ftd.row
--- end: ftd.column
-
--- end: ftd.row
--- end: navbar
-
-
-
-
-
--- component navlink:
--- ftd.column:
-height: fill-container
-align-content: center
--- ftd.text: Label
-text-align: center
--- end: ftd.column
--- end: navlink
-
-
-
--- component cta-1:
--- ftd.row:
-align-content: center
-width.fixed.vw.px: 100
-height.fixed.px: 68
-background.solid: black
--- ftd.column:
-align-content: center
-width.fixed.px: 488
-height.fixed.px: 30
--- ftd.text: Lorem ipsum dolor sit amet consectetur adipiscin.
-color: white
--- end: ftd.column
-
-
-
--- end: ftd.row
--- end: cta-1
-
-
-
--- component hero-1:
--- ftd.row:
-padding-top.px: 100
-align-content: center
-width.fixed.vw.px: 100
-height.fixed.px: 772
-background.solid: yellow
-
--- ftd.column:
-align-content: top-center
-width.fixed.px: 993 
-height: fill-container
-background.solid: white
-
--- ftd.row:
--- ftd.text: The Seven Collection
-color: black
-role: $inherited.types.heading-large
--- end: ftd.row
-
--- ftd.row:
-width.fixed.px: 688
--- ftd.text: In Partnership with Seva.Love and Artifex, the NFT Edition positions Chopra's timeless wisdom in a new light, in time for the 25th Anniversary of Chopra’s Bestseller, The Seven Spiritual Laws of Success.
-text-align: center
--- end: ftd.row
-
--- ftd.row:
-width.fixed.px: 688
--- ftd.text: The mint for TIMEPieces x Deepak Chopra: The Seven Collection is now closed as of January 22, 2023.
-text-align: center
--- end: ftd.row
-
-;; gif section
--- ftd.row:
-margin-top.px: 40
-width: fill-container
-height.fixed.px:556
-border-radius.px: 30
-background.solid: red
--- end: ftd.row
-;; end gif
-
--- end: ftd.column
-
--- end: ftd.row
--- end: hero-1
-
-
--- component timer:
-caption h1:
-caption h2:
--- ftd.row:
-width.fixed.px: 180
-height.fixed.px: 107
-background.solid: white
-align-content: center
--- ftd.column:
--- ftd.text: $timer.h1
-role: $inherited.types.heading-medium
-white-space: nowrap
--- ftd.text: $timer.h2
-role: $inherited.types.heading-small
--- end: ftd.column
--- end: ftd.row
--- end: timer
-
--- component hero-2:
--- ftd.row:
-align-content: top-center
-margin-top.px: 150
-width.fixed.vw.px: 100
-height.fixed.px: 1206
-background.solid: yellow
-spacing.fixed.px: 170
-padding-vertical.px: 100
-
-;; colmn 1
--- ftd.column:
-width.fixed.px: 404
-height.fixed.px: 865
-background.solid: red
--- ftd.row:
-width.fixed.px: 404
-height.fixed.px: 208
-background.solid: green
--- ftd.column:
--- ftd.text: About the Drop
-role: $inherited.types.heading-hero
-color: white
--- ftd.image:
-width.fixed.px: 298
-height.fixed.px: 528
-src: images/hero2.png
--- end: ftd.column
--- end: ftd.row
--- end: ftd.column
-;; colmn 1 end
-
--- ftd.column:
-border-radius.px: 30
-width.fixed.px: 610
-height.fixed.px: 1000
-background.solid: red
-padding-vertical.px: 100
-align-content: top-center
-spacing.fixed.px: 126
--- timer:
-h1: 19 Jan
-h2: Mint Starts
--- timer:
-h1: 22 Jan
-h2: Mint Ends
--- timer:
-h1: 0.077 ETH
-h2: Mint Costs
--- timer:
-h1: 3 Pieces
-h2: Mint Upto
--- end: ftd.column
-
-
-
--- end: ftd.row
--- end: hero-2
-
-
--- component hero-3:
--- ftd.row:
-margin-top.px: 150
-margin-horizontal.px: 100
-width.fixed.vw: 100
-height.fixed.px: 680
-spacing.fixed.px: 192
-
--- ftd.column:
--- ftd.image: 
-src: images/hero3.png
--- end: ftd.column
-
--- ftd.column:
-width.fixed.px: 512
-height.fixed.px: 361
-margin-vertical.px: 160
-spacing.fixed.px: 38
+-- component color-display:
+ftd.color-scheme color:
+optional boolean minimize:
 
 -- ftd.row:
 width: fill-container
-height.fixed.px: 65
--- ftd.text: What is Admint
-role: $inherited.types.heading-large
--- end: ftd.row
 
--- ftd.row:
--- ftd.column:
--- ftd.text: The Collection includes work by 73 incredible artists from six different continents across five artistic mediums. Each artist was asked to interpret the messages of The Seven Spiritual Laws of Success into a unique book cover, capturing what is described as “a connection between the power of art and the power and potential of human beings.”
-role: $inherited.types.copy-regular
--- ftd.text: The Collection includes work by 73 incredible artists from six different continents across five artistic mediums.
-role: $inherited.types.copy-regular
--- end: ftd.column
--- end: ftd.row
-
--- end: ftd.column
+-- all-color-display:
+color: $color-display.color
+minimize: $color-display.minimize
 
 -- end: ftd.row
 
--- end: hero-3
+-- end: color-display
 
 
--- component steps-sectn:
--- ftd.row:
-width.fixed.vw: 100
-height.fixed.px: 1005
-margin-top.px: 150
-background.solid: white
-align-content: center
+
+
+
+
+
+
+
+
+-- component all-color-display:
+ftd.color-scheme color:
+optional boolean minimize: 
 
 -- ftd.column:
+background.solid: $all-color-display.color.background.base
 width: fill-container
-margin-top.px: 200
-margin-horizontal.px: 130
-margin-bottom.px: 60
-background.solid: white
-align-content: top-center
 
 -- ftd.row:
-align-content: center
-width.fixed.px: 470
-height.fixed.px: 60
--- ftd.text: How to Participate
-role: $inherited.types.heading-large
+width:  fill-container
+
+-- cu.color-ui:
+color: $all-color-display.color
+minimize: $all-color-display.minimize
+
 -- end: ftd.row
 
 -- ftd.row:
-margin-top.px: 60
-width: fill-container
-background.solid: white
-spacing.fixed.px: 20
+width:  fill-container
 
--- stepcol:
-bg: white
-url: images/step1.png
--- stepcol:
-bg: #F9D54C
-url: images/step2.png
--- stepcol:
-bg: white
-url: images/step1.png
+-- cd.color-display-one:
+color: $all-color-display.color
+minimize: true
 
 -- end: ftd.row
 
 -- end: ftd.column
 
--- end: ftd.row
--- end: steps-sectn
-
-
--- component stepcol:
-caption url:
-caption bg:
--- ftd.column:
-align-content: top-center
-width.fixed.px: 380
-height.fixed.px: 620
-border-radius.px: 20
-border-width.px: 2
-border-color: yellow
-background.solid: $stepcol.bg
-padding-top.px: 30
-margin-horizontal.px: 18
-
--- ftd.row:
-border-radius.px: 20
--- ftd.image:
-src: $stepcol.url
--- end: ftd.row
-
--- ftd.row:
-padding-top.px: 36
-padding-horizontal.px: 18
--- ftd.text: Members earn 1 point for every $1 spent. Once you accrue 150, 250 or 350 points, you are eligible to redeem points for a product with any purchase.
-role: $inherited.types.copy-regular
--- end: ftd.row
-
--- end: ftd.column
--- end: stepcol
+-- end: all-color-display
 
 
 
--- component collection:
--- ftd.row:
-margin-top.px: 150
-width.fixed.vw: 100
-height.fixed.px: 1111
-align-content: center
-
--- ftd.column:
-margin-vertical.px: 56
-width: fill-container
-height.fixed.px: 1000
-margin-horizontal.px: 150
-align-content: top-center
-
--- ftd.row:
-width.fixed.px: 534
-height.fixed.px: 65
--- ftd.text: The Seven Collection
-role: $inherited.types.heading-large
--- end: ftd.row
-
--- ftd.row:
-margin-top.px: 20
-width.fixed.px: 920
-height.fixed.px: 90
--- ftd.text: The Collection includes work by 73 incredible artists from six different continents across five artistic mediums. Each artist was asked to interpret the messages of The Seven Spiritual Laws of Success into a unique book cover, capturing what is described as “a connection between the power of art and the power and potential of human beings.”
-role: $inherited.types.copy-regular
-text-align: center
--- end: ftd.row
-
--- ftd.row:
-width: fill-container
-height.fixed.px: 372
-background.solid: white
-margin-top.px: 60
-padding-horizontal.px: 150
-spacing.fixed.px: 30
--- collectioncol:
--- collectioncol:
--- collectioncol:
--- collectioncol:
--- end: ftd.row
 
 
--- ftd.row:
-width: fill-container
-height.fixed.px: 372
-background.solid: white
-margin-top.px: 20
-padding-horizontal.px: 150
-spacing.fixed.px: 30
--- collectioncol:
--- collectioncol:
--- collectioncol:
--- collectioncol:
--- end: ftd.row
-
-
--- end: ftd.column
-
--- end: ftd.row
--- end: collection
-
-
--- component collectioncol:
--- ftd.column:
-width.fixed.px: 270
-height.fixed.px: 372
-background.solid: #F9D963
-border-radius.px: 20
-align-content: top-center
-padding-top.px: 20
-padding-horizontal.px: 20
-
--- ftd.row:
--- ftd.image:
-src: images/clctn.png
--- end: ftd.row
-
--- ftd.row:
-padding-top.px: 60
-width.fixed.px: 240
-height.fixed.px: 30
-spacing.fixed.px: 115
--- ftd.text: Price
-role: $inherited.types.copy-regular
--- ftd.text: 0.077 ETH
-white-space: nowrap
-role: $inherited.types.copy-regular
--- end: ftd.row
-
--- end: ftd.column
-
--- end: collectioncol
-
-
--- component walletform:
--- ftd.row:
-margin-top.px: 150
-margin-horizontal.px: 40
-width.fixed.px: 1360
-height.fixed.px: 424
-background.solid: #F9D54C
-border-radius.px: 20
-align-content: center
-
--- ftd.column:
-padding-vertical.px: 100
-padding-horizontal.px: 168
-align-content: top-center
-
--- ftd.row:
--- ftd.text: To Participate, drop your Wallet ID here
-role: $inherited.types.heading-medium
--- end: ftd.row
-
--- ftd.row:
-margin-top.px: 18
-width: fill-container
-height.fixed.px: 60
--- ftd.text:  The Collection includes work by 73 incredible artists from six different continents across five artistic mediums. Each artist was asked to interpret the messages of The Seven Spiritual Laws of Success into a unique book cover, 
-role: $inherited.types.copy-regular
-text-align: center
--- end: ftd.row
-
--- ftd.row:
-margin-top.px: 32
-width.fixed.px: 850
-height.fixed.px: 57
--- ftd.text-input: 
-width.fixed.px: 626
-height: fill-container
-border-radius.px: 56
-background.solid: white
-placeholder: Enter your wallet ID
-role: $inherited.types.blockquote
-padding-left.px: 40
--- ftd.column:
-align-content: center
-margin-left.px: 28
-width.fixed.px: 196
-height: fill-container
-border-radius.px: 56
-background.solid: #F2665F
--- ftd.text: Connect Now!
-color: white
-role: $inherited.types.blockquote
--- end: ftd.column
--- end: ftd.row
-
-
-
--- end: ftd.column
-
--- end: ftd.row
--- end: walletform
+-- ftd.color-scheme main:
+background: $colors.background-
+border: $colors.border-
+border-strong: $colors.border-strong-
+text: $colors.text-
+text-strong: $colors.text-strong-
+shadow: $colors.shadow-
+scrim: $colors.scrim-
+cta-primary: $colors.cta-primary-
+cta-secondary: $colors.cta-secondary-
+cta-tertiary: $colors.cta-tertiary-
+cta-danger: $colors.cta-danger-
+accent: $colors.accent-
+error: $colors.error-btb-
+success: $colors.success-btb-
+info: $colors.info-btb-
+warning: $colors.warning-btb-
+custom: $colors.custom-
